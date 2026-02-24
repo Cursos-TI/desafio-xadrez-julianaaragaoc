@@ -30,7 +30,7 @@ int main() {
     
     //Declaração de variáveis
 
-    int Torre, Bispo, Rainha;
+    int Torre, Bispo, Rainha, Cavalo;
         
      // ================================
     // Movimento da TORRE (for)
@@ -69,6 +69,23 @@ int main() {
         printf("Esquerda\n");
         Rainha++;
     } while (Rainha <= 8);
+
+        // ================================
+    // Movimento do CAVALO (do-while)
+    // Move 8 casas para a esquerda
+    // ================================
+    
+    printf("\nMovimento do Cavalo:\n");
+  
+    Cavalo = 1;
+    // Loop externo controla as 2 casas para baixo
+    while (Cavalo--)
+    {
+        for (int i = 0; i<2 ; i++){
+        printf("Baixo\n");
+        }
+    printf("Esquerda\n");
+    }
 
     return 0;
 }
